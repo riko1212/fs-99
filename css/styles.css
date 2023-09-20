@@ -1,0 +1,104 @@
+/* @font-face {
+  font-family: Danylko-700;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: Danylko-400;
+  src: url(../fonts/Montserrat-Regular.ttf);
+} */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+} */
+
+/** ================HEADER==================== */
+
+.header {
+}
+.header-navigation {
+}
+.header-logo {
+  color: #111;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+}
+
+.header-logo-italic {
+  font-style: italic;
+}
+.header-logo-image {
+}
+.header-menu-list {
+}
+.header-menu-item {
+}
+.header-menu-link {
+  color: #111;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+.header-soc-list {
+}
+.header-soc-item {
+}
+.header-soc-link {
+}
+
+/** ========================================= */
+
+/** ================HERO==================== */
+
+.hero {
+  background-color: rgba(17, 17, 17, 0.6);
+}
+.hero-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+}
+.hero-btn {
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+}
+.hero-btn-link {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+}
+.hero-btn-down {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+}
+
+/** ========================================= */
