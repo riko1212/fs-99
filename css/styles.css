@@ -12,12 +12,39 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: currentColor;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+address {
+  font-style: normal;
 }
 
 /* .list {
@@ -27,6 +54,14 @@ a {
 .link {
   text-decoration: none;
 } */
+
+.container {
+  width: 1166px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 
 .visually-hidden {
   position: absolute;
@@ -58,6 +93,8 @@ a {
 /** ================HEADER==================== */
 
 .header {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-navigation {
@@ -108,7 +145,13 @@ a {
 /** ================HERO==================== */
 
 .hero {
+  padding-bottom: 80px;
+}
+
+.hero-container {
   background-color: rgba(17, 17, 17, 0.6);
+  border-radius: 30px;
+  padding: 380px 40px 40px 40px;
 }
 .hero-title {
   color: #fff;
@@ -116,6 +159,8 @@ a {
   font-weight: 500;
   line-height: 1.21;
   letter-spacing: -0.03em;
+  max-width: 484px;
+  margin-bottom: 32px;
 }
 
 .hero-btn {
@@ -162,6 +207,8 @@ a {
 
 .features {
   background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .features-list {
 }
@@ -172,6 +219,7 @@ a {
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
+  margin-bottom: 18px;
 }
 .features-item-text {
   color: rgba(255, 255, 255, 0.7);
@@ -185,15 +233,23 @@ a {
 /** ================TASTE==================== */
 
 .taste {
+  padding-top: 120px;
 }
 .taste-title {
+  max-width: 412px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .taste-list {
 }
 .taste-item {
+  background-color: #fd9222;
+  padding: 28px 23px;
+  border-radius: 15px;
 }
 .taste-img {
+  margin-bottom: 36px;
 }
 .taste-subtitle {
   color: #111;
@@ -208,8 +264,10 @@ a {
 /** ================MADE==================== */
 
 .made {
+  padding-top: 120px;
 }
 .made-title {
+  margin-bottom: 50px;
 }
 
 .made-img {
@@ -219,10 +277,15 @@ a {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
+  margin-bottom: 28px;
 }
 .made-list {
 }
 .made-item {
+  margin-bottom: 24px;
+}
+.made-item:last-child {
+  margin-bottom: 0;
 }
 .made-item-text {
   color: #111;
@@ -236,8 +299,10 @@ a {
 /** ================PRODUCTS==================== */
 
 .products {
+  padding-top: 120px;
 }
 .products-title {
+  margin-bottom: 50px;
 }
 
 .products-list {
@@ -245,6 +310,7 @@ a {
 .products-item {
 }
 .products-img {
+  margin-bottom: 8px;
 }
 .products-subtitle {
   color: #111;
@@ -259,6 +325,7 @@ a {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
+  margin-bottom: 18px;
 }
 .products-btn {
   color: #111;
@@ -273,8 +340,10 @@ a {
 /** ================SELLERS==================== */
 
 .sellers {
+  padding-top: 120px;
 }
 .sellers-title {
+  margin-bottom: 50px;
 }
 .sellers-list {
 }
@@ -289,6 +358,13 @@ a {
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-align: center;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-top: none;
+  background-color: #fff;
+  border-radius: 0px 0px 15px 15px;
 }
 
 /** ========================================= */
