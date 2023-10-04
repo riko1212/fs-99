@@ -154,9 +154,35 @@ address {
   gap: 14px;
 }
 .header-soc-item {
+  width: 40px;
+  height: 40px;
 }
 .header-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  color: #111111;
 }
+
+.header-soc-icon {
+  fill: currentColor;
+}
+
+.header-soc-link:hover {
+  border-color: rgba(253, 146, 34, 0.1);
+  color: #fd9222;
+}
+/* .header-soc-link:hover {
+  border-color: rgba(253, 146, 34, 0.1);
+}
+
+.header-soc-link:hover .header-soc-icon {
+  fill: #fd9222;
+} */
 
 /** ========================================= */
 
@@ -168,6 +194,14 @@ address {
 
 .hero-container {
   background-color: rgba(17, 17, 17, 0.6);
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(../images/hero-bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border-radius: 30px;
   padding: 380px 40px 40px 40px;
 }
@@ -228,10 +262,29 @@ address {
   line-height: 1.29;
   letter-spacing: -0.03em;
   margin-left: auto;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.hero-btn-down::after {
+  content: '';
+  width: 38px;
+  height: 38px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  background-image: url(../images/angle-left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-btn-down:hover {
   color: #fd9222;
+}
+
+.hero-btn-down:hover::after {
+  background-color: #fd9222;
+  background-image: url(../images/angle-left-white.svg);
 }
 
 /** ========================================= */
