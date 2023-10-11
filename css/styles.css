@@ -695,3 +695,121 @@ address {
 }
 
 /** ========================================= */
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 24, 35, 0.494);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.modal {
+  width: 517px;
+  height: 794px;
+  background-color: #fafafa;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+}
+
+.modal-btn {
+  background-color: transparent;
+  border: none;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+
+.modal-btn-icon {
+  fill: transparent;
+  stroke: #111111;
+}
+
+.modal-title {
+  text-align: left;
+  max-width: 300px;
+  margin-bottom: 40px;
+}
+
+.modal-field {
+  margin-bottom: 18px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 68px;
+  border-radius: 13px;
+  border: 1px solid rgba(17, 17, 17, 0.23);
+  background-color: inherit;
+  color: green;
+  font-size: 18px;
+  padding-left: 62px;
+  outline: transparent;
+  transition: border-color 300ms linear;
+}
+
+.modal-input:focus {
+  border-color: #fd9222;
+}
+
+.modal-input:focus + .modal-icon {
+  stroke: #fd9222;
+}
+
+.modal-input::placeholder {
+  color: purple;
+  font-size: 14px;
+}
+.modal-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.modal-input-wrap {
+  position: relative;
+}
+
+.modal-icon {
+  fill: transparent;
+  stroke: #404040;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 24px;
+  transition: stroke 300ms linear;
+}
+
+.modal-text {
+  width: 100%;
+  height: 137px;
+  border-radius: 13px;
+  border: 1px solid rgba(17, 17, 17, 0.23);
+  background-color: inherit;
+  color: green;
+  font-size: 18px;
+  padding: 22px 24px;
+  outline: transparent;
+  transition: border-color 300ms linear;
+  resize: none;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
