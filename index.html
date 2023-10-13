@@ -71,6 +71,7 @@
           <li class="header-soc-item">
             <a
               class="header-soc-link"
+              aria-label="twitter"
               href=""
               target="_blank"
               rel="noopener noreferrer"
@@ -420,13 +421,13 @@
           </h2>
           <ul class="loved-list">
             <li class="loved-item">
-              <!-- <img
+              <img
                 src="./images/loved-img-1.jpeg"
                 alt="Victoria Dobrzhanska"
                 width="80"
                 height="80"
                 class="loved-img"
-              /> -->
+              />
               <h3 class="loved-subtitle">Victoria Dobrzhanska</h3>
               <p class="loved-item-text">
                 I love this chocolate bar. Perfect combination of light crispy
@@ -434,13 +435,13 @@
               </p>
             </li>
             <li class="loved-item">
-              <!-- <img
+              <img
                 src="./images/loved-img-2.jpeg"
                 alt="Nazar Babenko"
                 width="80"
                 height="80"
                 class="loved-img"
-              /> -->
+              />
               <h3 class="loved-subtitle">Nazar Babenko</h3>
               <p class="loved-item-text">
                 This chocolate confection is a delight! A delight! The wafer is
@@ -449,13 +450,13 @@
               </p>
             </li>
             <li class="loved-item">
-              <!-- <img
+              <img
                 src="./images/loved-img-3.jpeg"
                 alt="Olena Kampusch"
                 width="80"
                 height="80"
                 class="loved-img"
-              /> -->
+              />
               <h3 class="loved-subtitle">Olena Kampusch</h3>
               <p class="loved-item-text">
                 Chocolate is a family favourite treat. Love the delicious smooth
@@ -526,22 +527,33 @@
             </address>
           </div>
         </div>
-        <nav class="footer-navigation">
-          <ul class="footer-menu-list">
-            <li class="footer-menu-item">
-              <a class="footer-menu-link" href="#header">Home</a>
-            </li>
-            <li class="footer-menu-item">
-              <a class="footer-menu-link" href="#made">How it’s made?</a>
-            </li>
-            <li class="footer-menu-item">
-              <a class="footer-menu-link" href="#loved">Chocolate is loved</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="footer-bottom">
+          <nav class="footer-navigation">
+            <ul class="footer-menu-list">
+              <li class="footer-menu-item">
+                <a class="footer-menu-link" href="#header">Home</a>
+              </li>
+              <li class="footer-menu-item">
+                <a class="footer-menu-link" href="#made">How it’s made?</a>
+              </li>
+              <li class="footer-menu-item">
+                <a class="footer-menu-link" href="#loved">Chocolate is loved</a>
+              </li>
+            </ul>
+          </nav>
+          <form class="footer-form">
+            <input
+              type="email"
+              class="footer-input"
+              placeholder="Enter your email"
+              aria-label="email input"
+            />
+            <button type="submit" class="footer-form-btn">Subscribe</button>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-btn">
           <svg class="modal-btn-icon" width="28" height="28">
@@ -584,6 +596,7 @@
               class="modal-input"
               placeholder="Enter phone"
               required
+              value="+380"
             />
           </div>
 
@@ -596,9 +609,41 @@
               placeholder="Enter text"
             ></textarea>
           </div>
+          <!-- <div class="modal-field">
+            <label for="yes">yes</label>
+            <input type="radio" id="yes" name="question" value="yes" />
+            <label for="no">no</label>
+            <input type="radio" id="no" name="question" value="no" />
+          </div>
+          <div class="modal-field">
+            <label for="one">one</label>
+            <input type="checkbox" id="one" name="number" checked value="one" />
+            <label for="two">two</label>
+            <input type="checkbox" id="two" name="number" value="two" />
+            <label for="three">three</label>
+            <input type="checkbox" id="three" name="number" value="three" />
+          </div> -->
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="modal-check"
+              id="modal-check"
+              class="check-input visually-hidden"
+            />
+            <label for="modal-check" class="check-text">
+              <span
+                ><svg class="modal-check-icon" width="10" height="10">
+                  <use href="./images/icons.svg#icon-check"></use></svg
+              ></span>
+              I accept the terms and conditions of the
+              <a href="">Privacy Policy</a></label
+            >
+          </div>
           <button type="submit">Send</button>
         </form>
       </div>
     </div>
   </body>
 </html>
+
+user-name=cdsc &user-email= &user-phone=cascac &user-text= &question=on
